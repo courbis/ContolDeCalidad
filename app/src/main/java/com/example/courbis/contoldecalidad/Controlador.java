@@ -19,7 +19,7 @@ public class Controlador extends AppCompatActivity /*implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.vista_formulario);
+        setContentView(R.layout.vista_tarea);
     }
 
 /*

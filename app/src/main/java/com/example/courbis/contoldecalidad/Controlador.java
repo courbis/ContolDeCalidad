@@ -14,20 +14,25 @@ import android.widget.Toast;
 import com.example.courbis.contoldecalidad.DB.AdminSQLiteOpenHelper;
 import com.example.courbis.contoldecalidad.Modelo.modeloUsuario;
 
-public class Controlador extends AppCompatActivity /*implements View.OnClickListener*/ {
+public class Controlador extends AppCompatActivity implements View.OnClickListener {
+
+    EditText edtUsuario;
+    EditText edtPass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.vista_tarea);
+        setContentView(R.layout.vista_login);
+        edtUsuario=(EditText)findViewById(R.id.editTextUsuario);
+        edtPass=(EditText)findViewById(R.id.editTextPass);
     }
 
-/*
+
     @Override
     public void onClick(View v) {
         Log.d("pruebaLogin","estoy aca");
-//        llenaBase();
-        //Login();
+        llenaBase();
+        Login();
     }
 
     public void llenaBase(){
@@ -73,5 +78,5 @@ public class Controlador extends AppCompatActivity /*implements View.OnClickList
         }
     }
 
-*/
+
 }

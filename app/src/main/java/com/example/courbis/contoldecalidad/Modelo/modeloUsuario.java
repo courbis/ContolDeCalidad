@@ -1,5 +1,7 @@
 package com.example.courbis.contoldecalidad.Modelo;
 
+import android.text.Editable;
+
 /**
  * Created by courbis on 24-08-16.
  */

@@ -54,4 +54,5 @@
         android:layout_below="@+id/editTextPass"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="59dp" />
+
 </RelativeLayout>

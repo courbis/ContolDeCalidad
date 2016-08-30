@@ -40,6 +40,8 @@ public class Controlador extends AppCompatActivity implements View.OnClickListen
         AdminSQLiteOpenHelper adminSQLiteOpenHelper= new AdminSQLiteOpenHelper(this, "controlDeCalidad", null, 1);
         SQLiteDatabase dbw= adminSQLiteOpenHelper.getWritableDatabase();
 
+
+        Log.d("pruebaBase","Estoy al principio de llenaBase");
         ContentValues registro= new ContentValues();
         registro.put("rut","1234567");
         registro.put("nombre","Julio");
@@ -47,7 +49,7 @@ public class Controlador extends AppCompatActivity implements View.OnClickListen
         registro.put("apellido_materno","Palma");
         registro.put("pass","1234567");
         dbw.insert("usuario", null, registro);
-
+        Log.d("pruebaBase","Estoy al final de llenaBase");
 
 
     }

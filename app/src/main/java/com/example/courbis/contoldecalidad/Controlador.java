@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+//prueba2
+
 import com.example.courbis.contoldecalidad.DB.AdminSQLiteOpenHelper;
 import com.example.courbis.contoldecalidad.Modelo.modeloUsuario;
 

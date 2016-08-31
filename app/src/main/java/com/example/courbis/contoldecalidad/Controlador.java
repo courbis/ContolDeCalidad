@@ -10,9 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-//prueba2
-
 import com.example.courbis.contoldecalidad.DB.AdminSQLiteOpenHelper;
 import com.example.courbis.contoldecalidad.Modelo.modeloUsuario;
 
@@ -20,21 +17,26 @@ public class Controlador extends AppCompatActivity implements View.OnClickListen
 
     EditText edtUsuario;
     EditText edtPass;
+    Button btnListo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vista_login);
+        Log.d("hola","estoy en onCreate");
         edtUsuario=(EditText)findViewById(R.id.editTextUsuario);
         edtPass=(EditText)findViewById(R.id.editTextPass);
+        btnListo=(Button)findViewById(R.id.btnListo);
+        btnListo.setOnClickListener(this);
+
     }
 
 
     @Override
     public void onClick(View v) {
-        Log.d("pruebaLogin","estoy aca");
-        llenaBase();
-        Login();
+       Log.println(Log.VERBOSE,"prueba1","estoy en onClick");
+        Toast.makeText(getApplicationContext(),"Pase prueba1",Toast.LENGTH_SHORT).show();
+
     }
 
     public void llenaBase(){

@@ -14,7 +14,7 @@ import com.example.courbis.contoldecalidad.DB.AdminSQLiteOpenHelper;
 import com.example.courbis.contoldecalidad.Modelo.modeloUsuario;
 
 public class Controlador extends AppCompatActivity implements View.OnClickListener {
-
+    //courbis ql ctm
     EditText edtUsuario;
     EditText edtPass;
     Button btnListo;

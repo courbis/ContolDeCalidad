@@ -1,4 +1,4 @@
-package com.example.courbis.contoldecalidad;
+package com.example.courbis.contoldecalidad.Controlador;
 
 import android.content.ContentValues;
 import android.database.Cursor;
@@ -10,14 +10,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.courbis.contoldecalidad.Conexion.Buscared;
 import com.example.courbis.contoldecalidad.DB.AdminSQLiteOpenHelper;
 import com.example.courbis.contoldecalidad.Modelo.modeloUsuario;
+import com.example.courbis.contoldecalidad.R;
 
 public class Controlador extends AppCompatActivity implements View.OnClickListener {
     //courbis ql ctm
     EditText edtUsuario;
     EditText edtPass;
     Button btnListo;
+    Buscared br;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,14 +32,22 @@ public class Controlador extends AppCompatActivity implements View.OnClickListen
         edtPass=(EditText)findViewById(R.id.editTextPass);
         btnListo=(Button)findViewById(R.id.btnListo);
         btnListo.setOnClickListener(this);
+       
 
     }
 
 
     @Override
     public void onClick(View v) {
+        br = new Buscared(this);
        Log.println(Log.VERBOSE,"prueba1","estoy en onClick");
         Toast.makeText(getApplicationContext(),"Pase prueba1",Toast.LENGTH_SHORT).show();
+        if(br.coneccion()){
+            Toast.makeText(Controlador.this,"conectado",Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(Controlador.this,"no conectado",Toast.LENGTH_SHORT).show();
+        }
+
 
     }
 

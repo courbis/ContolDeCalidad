@@ -4,8 +4,22 @@
     android:layout_height="match_parent">
 
     <ListView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listViewTarea"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/listViewObra"
+        android:layout_gravity="center_horizontal"
+        android:dividerHeight="1px"
+        android:divider="@color/accent_material_light"
+        android:visibility="visible"
+        android:textAlignment="center"
+        android:stackFromBottom="false"
+        android:textFilterEnabled="false"
+        android:background="@color/background_material_light"
+        android:clickable="true"
+        android:fastScrollAlwaysVisible="false"
+        android:fastScrollEnabled="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:footerDividersEnabled="false"
+        android:listSelector="@color/accent_material_dark" />
 </LinearLayout>
